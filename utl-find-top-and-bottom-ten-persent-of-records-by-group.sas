@@ -115,7 +115,7 @@ PROCESS
 
 proc rank data = work.have
       groups=10
-      ties=high
+      ties=mean
       out=wantpre (where=(ranked_msrp in (0,9)));
       by origin;
       var msrp;
